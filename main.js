@@ -2,11 +2,17 @@ const app = Vue.createApp({
     data() {
         return {
             product: 'Socks',
-            image: './assets/images/socks_green.jpg',
-            inventory: 100,
+            image: './assets/images/socks_blue.jpg',
+            inventory: 0,
             onSale: true,
             url: 'https://www.amazon.com/s?k=socks',
             description: 'A pair of warm, fuzzy socks',
+            details: ['50% cotton', '30% wool', '20% polyester'],
+            variants: [
+                { id: 2234, color: 'green'},
+                { id: 2235, color: 'blue'}
+            ],
+            sizes: ['S', 'M', 'L', 'XL'],
         }
     }
 })
